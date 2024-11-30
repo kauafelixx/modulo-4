@@ -5,67 +5,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
-:root{
+:root {
     --font-titulo: "Audiowide", sans-serif;
     --font-padrao: "Space Mono", monospace;
 
-    --color-1:hsl(199, 100%, 11%);
-    --color-2:#0085C2;
-    --color-3:#005176;
-    --color-4:#005A83;
-    --color-5:#003F5C;
+    --color-1: hsl(199, 100%, 11%);
+    --color-2: #0085C2;
+    --color-3: #005176;
+    --color-4: #005A83;
+    --color-5: #003F5C;
 
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
-background-image: linear-gradient( to left, #003F5C, #002536);
-background-size: 100wv;
+body {
+    background-image: linear-gradient(to left, #003F5C, #002536);
+    background-size: 100wv;
 }
 
 
-header{
+header {
     background-color: var(--color-3);
-    box-shadow: 1px 1px 20px  rgba(0, 0, 0, 0.719);
-padding: 20px;
-    h1{
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.719);
+    padding: 20px;
+
+    h1 {
         font-size: 6vw;
         color: white;
         font-family: var(--font-titulo);
         text-align: center;
         padding-top: 20px;
-        letter-spacing: 0.2em;  
+        letter-spacing: 0.2em;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.584);
     }
-    h4{
-        font-family: var(--font-titulo);
+
+    h2 {
+        font-family: var(--font-padrao);
         text-align: center;
         color: white;
-     font-size: 4vw;
-     padding-bottom: 20px;
+        font-size: 4vw;
+        padding-bottom: 20px;
     }
-    h6{
+
+    h4 {
         font-family: var(--font-padrao);
         padding-bottom: 5px;
         font-size: 3vw;
         color: white;
     }
-    ul{
+
+    ul {
         font-family: var(--font-padrao);
-      padding-bottom: 10px;
+        padding-bottom: 10px;
         color: white;
         padding-left: 20px;
-        font-size: 1.8vw;
-    
-        li{
+        font-size: 0.6em;
+
+        li {
             padding-left: 10px;
             line-height: 2em;
             text-align: justify;
             padding-bottom: 10px;
         }
     }
-    
+
+}
+
+.cap22{
+    padding: 30px;
+
+
+    h4{
+        font-family: var(--font-titulo);
+        font-family: var(--font-padrao);
+        padding-bottom: 5px;
+        font-size: 3.7vw;
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+p{
+    font-family: var(--font-padrao);
+    color: white;
+    font-size: 0.8em;
+    text-align: justify;
+    line-height: 2em;
+    text-indent: 15px;
+    margin-bottom: 20px;
+}
+mark{
+    background-color: var(--color-2);
+    padding: 1px;
+    border-radius: 2px;
+    font-weight:bolder;
+}
 }
