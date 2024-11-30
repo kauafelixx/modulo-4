@@ -75,11 +75,11 @@ header {
 
 }
 
-.cap22{
+.cap22 {
     padding: 30px;
 
 
-    h4{
+    h4 {
         font-family: var(--font-titulo);
         font-family: var(--font-padrao);
         padding-bottom: 5px;
@@ -88,19 +88,44 @@ header {
         text-align: center;
         padding-bottom: 20px;
     }
-p{
-    font-family: var(--font-padrao);
-    color: white;
-    font-size: 0.8em;
-    text-align: justify;
-    line-height: 2em;
-    text-indent: 15px;
-    margin-bottom: 20px;
-}
-mark{
-    background-color: var(--color-2);
-    padding: 1px;
-    border-radius: 2px;
-    font-weight:bolder;
-}
+
+    p {
+        font-family: var(--font-padrao);
+        color: white;
+        font-size: 0.8em;
+        text-align: justify;
+        line-height: 2em;
+        text-indent: 15px;
+        margin-bottom: 20px;
+    }
+
+    mark {
+        background-color: var(--color-2);
+        padding: 1px;
+        border-radius: 2px;
+        font-weight: bolder;
+    }
+
+    #tela {
+        width: 300px;
+        display: flex;
+        margin: auto;
+        height: 200px;
+        border: solid 1px black;
+        background-color: white;
+    }
+
+    a {
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        font-family: var(--font-padrao);
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
