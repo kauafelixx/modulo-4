@@ -129,3 +129,38 @@ header {
         text-decoration: underline;
     }
 }
+
+.cap23 {
+    padding: 20px;
+
+    h4 {
+        font-family: var(--font-titulo);
+        font-family: var(--font-padrao);
+        padding-bottom: 5px;
+        font-size: 3.7vw;
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    h5 {
+        font-family: var(--font-titulo);
+        font-family: var(--font-padrao);
+        padding-bottom: 5px;
+        font-size: 2.6vw;
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    p {
+        font-family: var(--font-padrao);
+        color: white;
+        font-size: 0.8em;
+        text-align: justify;
+        line-height: 2em;
+        text-indent: 15px;
+        margin-bottom: 20px;
+
+    }
+}
