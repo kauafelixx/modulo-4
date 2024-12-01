@@ -166,8 +166,18 @@ header {
 }
 
 #projeto23{
-    width: 95vw;
-    height: 100vh;
-    margin:auto;
+    width: 90vw;
+    height: 800px;
     box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    margin: auto;
+}
+#p-do-projeto{
+    padding: 20px;
+    font-family: var(--font-padrao);
+    color: white;
+    font-size: 0.8em;
+    text-align: justify;
+    line-height: 2em;
+    text-indent: 15px;
+    margin-bottom: 20px;
 }
