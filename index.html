@@ -116,17 +116,26 @@
         <p>Formularios é uma coisa feita para coletar dados tipo <mark>UMA SENHA</mark> </p>
 
 
-        <form>
-            <p>nome: <input type="text" name="nome" id="nome"></p>
-            <p>sobrenome <input type="text" name="sobrenome" id="sobrenome"></p>
+        <form autocomplete="off">
+            <p><label for="nome">nome:</label> <input type="text" name="nome" id="nome"></p>
+            <p> <label for="sobrenome"> sobrenome</label><input type="text" name="sobrenome" id="sobrenome"></p>
             <p><input type="submit" value="Enviar"></p>
         </form>
+        <p>Para desligar aquela ajuda que fica no formulario é só colocar
+            <strong><mark>autocomplet="off"</mark></strong> dentro de form</p>
+        <p> <mark>QUE NÃO FUNCIONOL NO MEU TESTE</mark></p>
+
+        <p><strong>Para mandar um dado de nome por exemplo quando clica no botão submit, é só colocar um action dentro
+                de form com o nome da pasta que vai ligar, pode ser um arquivo PHP ou JAVASCRIPT, que vai conter a ação
+                que vai ocorrer.</strong></p>
 
         <p><mark>Todo formulario tem que está dentro da tag form</mark> </p>
         <p>O jeito acima é o mais simples que tem, não é o principal</p>
 
 
-
+        <p>Melhorando formularios com <mark> label </mark>
+        <p>Label vai servir para relacionar o input ao seu nome,vai colocar ele no nome do input e colocar no for, o id
+            do input, que vai ligar os dois, ai o navegador vai entender. </p>
     </section>
 
 
