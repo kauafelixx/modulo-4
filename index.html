@@ -122,7 +122,8 @@
             <p><input type="submit" value="Enviar"></p>
         </form>
         <p>Para desligar aquela ajuda que fica no formulario é só colocar
-            <strong><mark>autocomplet="off"</mark></strong> dentro de form</p>
+            <strong><mark>autocomplet="off"</mark></strong> dentro de form
+        </p>
         <p> <mark>QUE NÃO FUNCIONOL NO MEU TESTE</mark></p>
 
         <p><strong>Para mandar um dado de nome por exemplo quando clica no botão submit, é só colocar um action dentro
@@ -136,6 +137,176 @@
         <p>Melhorando formularios com <mark> label </mark>
         <p>Label vai servir para relacionar o input ao seu nome,vai colocar ele no nome do input e colocar no for, o id
             do input, que vai ligar os dois, ai o navegador vai entender. </p>
+
+        <p>O input de senhas é o type password, que inves de ficar como o type text em letras normal, vai ficar em
+            pontinhos.
+            <br><br>
+            EX
+        </p>
+
+        <form action="cadastro.php" method="post">
+            <p>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+        <p>Tem a função de <mark>required (dentro de input) </mark> que vai fazer com que o formulario so passe para
+            frente se ele estiver com o dado pedido</p>
+        <p>Tambem tem o maximo e o minimo de letras que cada formulario vai ter, que se dar com <mark>minlength (minimo
+                de letras)</mark> e <mark>maxlength (maximo de letras)</mark></p>
+
+        <p>Tem o <mark> size</mark> que vai dizer o tanto de letras que vai mostrar na caixa</p>
+        <p>tambem tem a função que da uma dica do que é para fazer, que é o <mark>placeholder</mark></p>
+        <p>Tem o autocomplet que vai no input, que é oque vai dizer qual vai ser a função dele
+            <br><br>
+            EX: username
+            <br>
+            <mark>TEM QUE TA ON NO FORM</mark>
+        </p>
+
+        <p>ELEMENTOS NUMBER, MONTH, DATE E TIME</p>
+
+        <form action="cadastro.php" autocomplete="on">
+
+            <p>
+                <label for="nome">nome</label>
+                <input type="text" name="nome" id="nome" required maxlength="30" placeholder="nome completo"
+                    autocomplete="name">
+            </p>
+            <p>
+                <label for="media">Media</label>
+                <input type="number" name="media" id="media" min="0" max="10" placeholder="de 0 a 10" required
+                    step="0.5">
+            </p>
+
+            <p>
+                <label for="mes">Mes e ano</label>
+                <input type="month" name="mes" id="mes">
+            </p>
+            <p>
+                <label for="data">Data</label>
+                <input type="date" name="data" id="data">
+            </p>
+            <p>
+                <label for="hora">Hora da prova</label>
+                <input type="time" name="hora" id="hora">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </form>
+
+        <p>Em alguns casos o navagador não vai ser adaptado ao formulario, não tem muito oque fazer com html e em com
+            css, so com alguma linguagem, e não é poblema meu e sim do navegador.</p>
+
+        <p>FORMULARIOS DE TELEFONE E EMAIL</p>
+
+        <form action="cadastro.php" method="post">
+
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required autocomplete="
+    email">
+            </p>
+
+            <p>
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" id="tel" required autocomplete="tel">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+
+        </form>
+        <p>Se usa a tag<mark> fieldset</mark> para agrupar coisas de um mesmo topico no formulario e <mark>
+                legend</mark> para colocar uma legenda
+            <br><br>
+            EX
+        </p>
+        <form action="cadastro.php" method="post">
+
+            <fieldset>
+
+                <legend style="color: white; padding: 30px"> Meus dados </legend>
+
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required autocomplete="
+                        email">
+                </p>
+
+                <p>
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="tel" id="tel" required autocomplete="tel">
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+
+
+            </fieldset>
+
+        </form>
+        <br>
+        <p>CHECKBOX</p>
+
+        <form action="cadastro.php" method="post">
+
+            <fieldset>
+                <legend style="color: white; padding: 30px"> Checkbox </legend>
+                <p>
+                    <label for="xxx">xxx</label>
+                    <input type="checkbox" name="xxx" id="xxx"><br>
+
+                    <label for="yyy"> yyy</label>
+                    <input type="checkbox" name="yyy" id="yyy"><br>
+
+                    <label for="www">www</label>
+                    <input type="checkbox" name="www" id="www"><br>
+
+                    <label for="ppp"> ppp</label>
+                    <input type="checkbox" name=" ppp" id="ppp">
+                    <br>
+                    <label for="qqq">qqq</label>
+                    <input type="checkbox" name="qqq" id="qqq"><br>
+
+                    <label for="ttt"> xxx</label>
+                    <input type="checkbox" name="ttt" id="ttt"><br>
+                </p>
+            </fieldset>
+
+
+
+        </form>
+        <br><br>
+        <form action="cadastro.php">
+
+            <fieldset>
+                <p>
+                    <label for="cor">Cor</label>
+                    <input type="color" name="cor" id="cor">
+                </p>
+
+                <p>
+                    <label for="rang">Rang</label>
+                    <input type="range" name="rang" id="rang">
+                </p>
+            </fieldset>
+
+        </form>
+
     </section>
 
 
