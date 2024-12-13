@@ -86,7 +86,9 @@ header {
         font-size: 3.7vw;
         color: white;
         text-align: center;
-        padding-bottom: 20px;
+        padding: 10px;
+        background-color: #0085c282;
+        width: 100%;
     }
 
     p {
@@ -140,7 +142,9 @@ header {
         font-size: 3.7vw;
         color: white;
         text-align: center;
-        padding-bottom: 20px;
+        padding: 10px;
+        background-color: #0085c282;
+        width: 100%;
     }
 
     h5 {
@@ -194,7 +198,47 @@ header {
         font-size: 3.7vw;
         color: white;
         text-align: center;
-        padding-bottom: 20px;
+      
+        background-color: #0085c282;
+        width: 100%;
+        padding: 10px;
+    }
+
+    p {
+        font-family: var(--font-padrao);
+        color: white;
+        font-size: 0.8em;
+        text-align: justify;
+        line-height: 2em;
+        text-indent: 15px;
+        margin-bottom: 20px;
+
+    }
+
+    mark {
+        background-color: var(--color-2);
+        padding: 1px;
+        border-radius: 2px;
+        font-weight: bolder;
+
+    }
+}
+
+
+.cap25{
+    padding: 20px;
+
+    h4 {
+        font-family: var(--font-titulo);
+        font-family: var(--font-padrao);
+        padding-bottom: 5px;
+        font-size: 3.7vw;
+        color: white;
+        text-align: center;
+ 
+        background-color: #0085c282;
+        width: 100%;
+        padding: 10px;
     }
 
     p {

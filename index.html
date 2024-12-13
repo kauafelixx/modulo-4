@@ -361,37 +361,69 @@
         <p>Para criar essa caixa de texto para enviar uma Menesagem é so botar a tag textarea com um input e pronto ( EM
             UM FORM ) </p>
 
-           <form action="post">
+        <form action="post">
             <p>
                 <label for="n1">Numero 1</label>
-                <input type="number" name="n1" id="n1" min="0" max="100" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+                <input type="number" name="n1" id="n1" min="0" max="100" required
+                    oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
             </p>
 
             <p>
                 <label for="n2">Numero 2</label>
-                <input type="number" name="n2" id="n2"  min="0" max="100" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+                <input type="number" name="n2" id="n2" min="0" max="100" required
+                    oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
             </p>
             <p>
                 <label for="soma">Soma</label>
                 <output name="soma" id="soma">0</output>
             </p>
-           </form>
-      <p>Essa simples calculadora foi feita com um pouco de JAVASCRIPT que usa uma funcionalidade dele para fazer a soma que é essa: <mark>oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)"</mark> </p>
+        </form>
+        <p>Essa simples calculadora foi feita com um pouco de JAVASCRIPT que usa uma funcionalidade dele para fazer a
+            soma que é essa: <mark>oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)"</mark> </p>
 
-      <form action="cadastro.php">
-        <p>
-            <label for="val1">Valor</label>
-            <input type="range" name="val1" id="val1" min="0" max="10" value="5" oninput="num.innerHTML= Number (val1.value)">
-            <output id="num">5</output>
-        </p>
-      </form>
-      <p>Oque faz esse coisa ficar assim foi essa tag do JAVASCRIPT em input de range <mark> oninput="num.innerHTML= Number (val1.value)" </mark></p>
+        <form action="cadastro.php">
+            <p>
+                <label for="val1">Valor</label>
+                <input type="range" name="val1" id="val1" min="0" max="10" value="5"
+                    oninput="num.innerHTML= Number (val1.value)">
+                <output id="num">5</output>
+            </p>
+        </form>
+        <p>Oque faz esse coisa ficar assim foi essa tag do JAVASCRIPT em input de range <mark> oninput="num.innerHTML=
+                Number (val1.value)" </mark></p>
+
+        <form action="cadastro.php">
+            <p>
+                <label for="iano">Em que ano você nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcidade()">
+            </p>
+            <p>
+                <label for="iidade">Sua idade é:</label>
+                <outputi id="iidade">0</output>
+            </p>
+        </form>
+        <script>
+            function calcidade() {
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+        </script>
     </section>
 
+    <section class="cap25">
+
+        <h4>Cápitulo 25 <mark>Mideia queries</mark> </h4>
+        <p><strong>VAMOS TORNA TUDO RESPONSIVO</strong></p>
+        <p><mark>midia query = midia type+midia feature</mark></p>
+        <p>Elas são muito importantes pois hoje  usamos diferentes tamanhos de telaas no nosso dia a dia que devem ser adaptadas</p>
+        <p><strong>Para fazer uma midia query é só criar um arquivo css e colocar dentro dele a função media que é dividifo em varias partes</strong></p>
+        <p>Midia feature  = vai configurar para diferentes tamanhos de telas </p>
+        <p>Para fazer uma pagina toda certinha vamos fazer assim: Vamos ter 3 styles css em um vai ser<mark> "all" = vai configurar ao todo</mark> o outro vai ser<mark> retrato.css media="scree and (orientation portrait)" para telas em retrato</mark>,  e o outro vai ser <mark>paisagem.css media="scree and (orientation landscape)" para telas em paisagem</mark></p>
 
 
 
 
+    </section>
 
 
 </body>
