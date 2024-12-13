@@ -259,4 +259,17 @@ header {
         font-weight: bolder;
 
     }
+    #projeto25{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.627);
+        border-radius: 10px;
+        margin: auto;
+        display: block;
+    }
+    img{
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.64);
+        margin: auto;
+        display: block;
+    }
 }
