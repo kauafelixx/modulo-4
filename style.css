@@ -25,6 +25,7 @@
 body {
     background-image: linear-gradient(to left, #003F5C, #002536);
     background-size: 100wv;
+    overflow-x: hidden;
 }
 
 
@@ -272,4 +273,38 @@ header {
         margin: auto;
         display: block;
     }
+}
+
+.cap26{
+    padding: 20px;
+
+    h4 {
+        font-family: var(--font-titulo);
+        font-family: var(--font-padrao);
+        padding-bottom: 5px;
+        font-size: 3.7vw;
+        color: white;
+        text-align: center;
+ 
+        background-color: #0085c282;
+        width: 100%;
+        padding: 10px;
+    }
+
+    p {
+        font-family: var(--font-padrao);
+        color: white;
+        font-size: 0.8em;
+        text-align: justify;
+        line-height: 2em;
+        text-indent: 15px;
+        margin-bottom: 20px;
+
+    }
+}
+#projeto-final{
+    width: 100vw;
+    height: 800px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    margin: auto; 
 }
